@@ -4,6 +4,8 @@ umask 007
 
 cd ${APP_ROOT}
 
+cat composer.json
+
 if [ -d /tmp/artifacts ] && [ "$(ls -A /tmp/artifacts)" ]; then
     mv -v /tmp/artifacts/* .
 fi
