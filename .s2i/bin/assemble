@@ -2,6 +2,7 @@
 
 umask 007
 
+echo "Cool install"
 cd ${APP_ROOT}
 
 cat composer.json
