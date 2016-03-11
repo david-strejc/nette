@@ -1,50 +1,67 @@
 {
-	"name": "nette/nette",
-	"type": "library",
-	"description": "Nette Framework - innovative framework for fast and easy development of secured web applications in PHP. Write less, have cleaner code and your work will bring you joy.",
-	"keywords": ["framework", "mvc", "debugging", "templating", "database", "forms", "mailing"],
-	"homepage": "https://nette.org",
-	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
-	"authors": [
-		{
-			"name": "David Grudl",
-			"homepage": "https://davidgrudl.com"
-		},
-		{
-			"name": "Nette Community",
-			"homepage": "https://nette.org/contributors"
-		}
-	],
-	"require": {
-		"nette/application": "^2.4",
-		"nette/bootstrap": "^2.4",
-		"nette/caching": "^2.4",
-		"nette/component-model": "^2.3",
-		"nette/database": "^2.4",
-		"nette/deprecated": "^2.3",
-		"nette/di": "^2.4",
-		"nette/finder": "^2.4",
-		"nette/forms": "^2.4",
-		"nette/http": "^2.4",
-		"nette/mail": "^2.4",
-		"nette/neon": "^2.4",
-		"nette/php-generator": "^2.4",
-		"nette/reflection": "^2.4",
-		"nette/robot-loader": "^2.4",
-		"nette/safe-stream": "^2.3",
-		"nette/security": "^2.4",
-		"nette/tokenizer": "^2.3",
-		"nette/utils": "^2.4",
-		"latte/latte": "^2.4",
-		"tracy/tracy": "^2.4"
-	},
-	"autoload": {
-		"classmap": ["Nette/"]
-	},
-	"minimum-stability": "dev",
-	"extra": {
-		"branch-alias": {
-			"dev-master": "2.4-dev"
-		}
-	}
-}
+    "name": "nette/web-project",
+    "description": "Nette: Standard Web Project",
+    "type": "project",
+    "license": [
+        "proprietary"
+    ],
+    "require": {
+        "php": ">= 5.5.0",
+        "nette/application": "2.3.5",
+        "nette/bootstrap": "@dev",
+        "nette/caching": "@dev",
+        "nette/di": "@dev",
+        "nette/finder": "@dev",
+        "nette/forms": "@dev",
+        "nette/http": "@dev",
+        "nette/mail": "@dev",
+        "nette/robot-loader": "@dev",
+        "nette/safe-stream": "@dev",
+        "nette/security": "@dev",
+        "nette/utils": "@dev",
+        "latte/latte": "@dev",
+        "tracy/tracy": "@dev",
+        "kdyby/console": "@dev",
+        "fabpot/goutte": "^3.1",
+        "guzzlehttp/guzzle": "^6.0",
+        "ipub/visual-paginator": "@dev",
+        "kdyby/facebook": "@dev",
+        "kdyby/redis": "^3.3",
+        "kdyby/doctrine": "~3.0@dev",
+        "kdyby/autowired": "@dev",
+        "doctrine/search": "dev-devel",
+        "kdyby/doctrine-search": "dev-master",
+        "kdyby/elastic-search": "dev-master",
+        "jms/serializer": "~0.16",
+        "kdyby/monolog": "^1.1",
+        "mandrill/mandrill": "^1.0",
+        "kdyby/events": "@dev",
+        "beberlei/DoctrineExtensions": "^1.0",
+        "zenify/doctrine-behaviors": "^2.2",
+        "kdyby/rabbitmq": "^1.1",
+        "jandrabek/tracy-gitversion-panel": "^1.0",
+        "league/csv": "^7.2",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "codeception/codeception": "*",
+        "symfony/event-dispatcher": "~2.8.2",
+        "flow/jsonpath": "^0.3.1",
+        "ublaboo/api-router": "^1.2",
+        "kdyby/validator": "@dev",
+        "symfony/property-access": "2.8.3"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fprochazka/doctrine-search.git"
+        }
+    ],
+    "require-dev": {
+        "nette/tester": "@dev",
+        "mockery/mockery": "@dev"
+    },
+    "autoload": {
+        "classmap": [
+            "app",
+            "libs"
+        ]
+    }
