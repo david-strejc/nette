@@ -25,7 +25,7 @@ else
   php ./vendor/composer.phar -q --no-ansi self-update
 fi
 
-php ./vendor/composer.phar --no-ansi install
+php ./vendor/composer.phar --no-ansi install -v
 
 npm install
 
